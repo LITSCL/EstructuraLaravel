@@ -26,6 +26,6 @@ Route::get("/categoria/crear-categoria", [App\Http\Controllers\CategoriaControll
 Route::get("/categoria/mostrar-categorias", [App\Http\Controllers\CategoriaController::class, "mostrarCategorias"])->name("categoria.vista.mostrarCategorias");
 Route::post("/categoria/crear", [App\Http\Controllers\CategoriaController::class, "save"])->name("categoria.accion.save");
 
-Route::get("/producto/producto-categoria", [App\Http\Controllers\ProductoController::class, "crearProducto"])->name("producto.vista.crearProducto");
+Route::get("/producto/crear-producto", [App\Http\Controllers\ProductoController::class, "crearProducto"])->name("producto.vista.crearProducto");
 Route::get("/producto/mostrar-productos", [App\Http\Controllers\ProductoController::class, "mostrarProductos"])->name("producto.vista.mostrarProductos");
 Route::post("/producto/crear", [App\Http\Controllers\ProductoController::class, "save"])->name("producto.accion.save");
